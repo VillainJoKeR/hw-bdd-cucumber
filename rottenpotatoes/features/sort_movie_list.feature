@@ -24,11 +24,11 @@ Background: movies have been added to database
 
 Scenario: sort movies alphabetically
   # your steps here
-  When I check the following ratings: PG,R,PG-13,NC-17,G
+  When I check the following ratings: PG,R,PG-13,G
   And I press "ratings_submit"
   Then I should be on the home page
   
-  When I follow "Movie Title"
+  When I follow "Movies Title"
   Then I should be on the home page
   
   And I should see "2001: A Space Odyssey" before "Aladdin"
@@ -44,7 +44,7 @@ Scenario: sort movies alphabetically
 
 Scenario: sort movies in increasing order of release date
   # your steps here
-  When I check the following ratings: PG,R,PG-13,NC-17,G
+  When I check the following ratings: PG,R,PG-13,G
   And I press "ratings_submit"
   Then I should be on the home page
   
